@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-02-11T15:15:02.985071Z",
+  "scope": "weekend",
+  "good_picks": [
+    {
+      "match_id": "M010",
+      "date": "2026-02-15",
+      "league": "Belgian Pro",
+      "home_team": "Bruges Lake",
+      "away_team": "Genk Steel",
+      "odds": 2.35,
+      "implied_prob": 0.4255,
+      "model_prob": 0.8705,
+      "value": 0.445
+    },
+    {
+      "match_id": "M004",
+      "date": "2026-02-14",
+      "league": "Bundesliga",
+      "home_team": "Rhine FC",
+      "away_team": "Berlin Forge",
+      "odds": 2.08,
+      "implied_prob": 0.4808,
+      "model_prob": 0.875,
+      "value": 0.3942
+    },
+    {
+      "match_id": "M007",
+      "date": "2026-02-15",
+      "league": "Primeira Liga",
+      "home_team": "Lisbon Green",
+      "away_team": "Porto Docks",
+      "odds": 2.22,
+      "implied_prob": 0.4505,
+      "model_prob": 0.8425,
+      "value": 0.3921
+    },
+    {
+      "match_id": "M013",
+      "date": "2026-02-15",
+      "league": "MLS",
+      "home_team": "Austin Rovers",
+      "away_team": "Miami Orbit",
+      "odds": 2.12,
+      "implied_prob": 0.4717,
+      "model_prob": 0.8425,
+      "value": 0.3708
+    },
+    {
+      "match_id": "M001",
+      "date": "2026-02-14",
+      "league": "Premier League",
+      "home_team": "North City",
+      "away_team": "Harbor United",
+      "odds": 1.82,
+      "implied_prob": 0.5495,
+      "model_prob": 0.875,
+      "value": 0.3255
+    }
+  ],
+  "extra_picks": [
+    {
+      "match_id": "M017",
+      "date": "2026-02-15",
+      "league": "Norwegian Eliteserien",
+      "home_team": "Oslo Snow",
+      "away_team": "Bergen Storm",
+      "odds": 2.18,
+      "implied_prob": 0.4587,
+      "model_prob": 0.7748,
+      "value": 0.3161
+    },
+    {
+      "match_id": "M012",
+      "date": "2026-02-15",
+      "league": "Scottish Prem",
+      "home_team": "Glasgow Red",
+      "away_team": "Aberdeen North",
+      "odds": 1.92,
+      "implied_prob": 0.5208,
+      "model_prob": 0.8101,
+      "value": 0.2893
+    },
+    {
+      "match_id": "M008",
+      "date": "2026-02-15",
+      "league": "Championship",
+      "home_team": "Leeds Park",
+      "away_team": "Bristol Vale",
+      "odds": 1.88,
+      "implied_prob": 0.5319,
+      "model_prob": 0.8101,
+      "value": 0.2782
+    },
+    {
+      "match_id": "M015",
+      "date": "2026-02-15",
+      "league": "Argentine Primera",
+      "home_team": "Boca Plains",
+      "away_team": "Cordoba FC",
+      "odds": 1.99,
+      "implied_prob": 0.5025,
+      "model_prob": 0.7748,
+      "value": 0.2723
+    },
+    {
+      "match_id": "M016",
+      "date": "2026-02-15",
+      "league": "Danish Superliga",
+      "home_team": "Copenhagen Light",
+      "away_team": "Aarhus Wind",
+      "odds": 1.83,
+      "implied_prob": 0.5464,
+      "model_prob": 0.8101,
+      "value": 0.2636
+    },
+    {
+      "match_id": "M002",
+      "date": "2026-02-14",
+      "league": "La Liga",
+      "home_team": "Madrid Coast",
+      "away_team": "Sevilla Stars",
+      "odds": 1.95,
+      "implied_prob": 0.5128,
+      "model_prob": 0.7748,
+      "value": 0.262
+    },
+    {
+      "match_id": "M009",
+      "date": "2026-02-15",
+      "league": "Super Lig",
+      "home_team": "Istanbul Fire",
+      "away_team": "Ankara Gold",
+      "odds": 1.79,
+      "implied_prob": 0.5587,
+      "model_prob": 0.8101,
+      "value": 0.2514
+    },
+    {
+      "match_id": "M006",
+      "date": "2026-02-14",
+      "league": "Eredivisie",
+      "home_team": "Ajax Town",
+      "away_team": "Rotterdam Blue",
+      "odds": 1.61,
+      "implied_prob": 0.6211,
+      "model_prob": 0.8705,
+      "value": 0.2494
+    },
+    {
+      "match_id": "M003",
+      "date": "2026-02-14",
+      "league": "Serie A",
+      "home_team": "Milan Borough",
+      "away_team": "Turin Eagles",
+      "odds": 1.67,
+      "implied_prob": 0.5988,
+      "model_prob": 0.8425,
+      "value": 0.2437
+    },
+    {
+      "match_id": "M018",
+      "date": "2026-02-15",
+      "league": "Swedish Allsvenskan",
+      "home_team": "Stockholm East",
+      "away_team": "Malmo Harbor",
+      "odds": 1.76,
+      "implied_prob": 0.5682,
+      "model_prob": 0.8101,
+      "value": 0.2419
+    }
+  ]
+}
