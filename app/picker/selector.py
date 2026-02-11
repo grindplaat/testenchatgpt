@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass, asdict
 from typing import Any
 
 from app.model.btts_probability import match_btts_probability
@@ -64,44 +64,6 @@ def build_ranked_picks(
     return sorted(picks, key=lambda p: p.value, reverse=True)
 
 
-def build_ranked_market_only_picks(
-    fixtures: list[dict[str, Any]],
-    odds_by_match_id: dict[str, float],
-) -> list[Pick]:
-    """Rank using only market implied probability (no team histories/model)."""
-    picks: list[Pick] = []
-
-    for fixture in fixtures:
-        match_id = fixture["match_id"]
-        if match_id not in odds_by_match_id:
-            continue
-
-        odds = float(odds_by_match_id[match_id])
-        if not (1.50 <= odds <= 2.40):
-            continue
-
-        implied_prob = 1 / odds
-        # No model yet for live provider; use a market-only score for ranking.
-        # Higher decimal odds => lower implied probability => larger score.
-        market_score = 1 - implied_prob
-
-        picks.append(
-            Pick(
-                match_id=match_id,
-                date=fixture["date"],
-                league=fixture["league"],
-                home_team=fixture["home_team"],
-                away_team=fixture["away_team"],
-                odds=round(odds, 2),
-                implied_prob=round(implied_prob, 4),
-                model_prob=round(market_score, 4),
-                value=round(market_score, 4),
-            )
-        )
-
-    return sorted(picks, key=lambda p: p.value, reverse=True)
-
-
 def split_good_and_extra(ranked_picks: list[Pick]) -> tuple[list[Pick], list[Pick]]:
     good_candidates = [
         p
@@ -121,11 +83,4 @@ def split_good_and_extra(ranked_picks: list[Pick]) -> tuple[list[Pick], list[Pic
     ]
     extra_picks = extra_candidates[:10]
 
-    return good_picks, extra_picks
-
-
-def split_top_good_and_extra(ranked_picks: list[Pick]) -> tuple[list[Pick], list[Pick]]:
-    """Used for provider=oddsapi: top 5 then next 10 without model thresholds."""
-    good_picks = ranked_picks[:5]
-    extra_picks = ranked_picks[5:15]
     return good_picks, extra_picks
