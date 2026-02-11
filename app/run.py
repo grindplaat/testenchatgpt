@@ -6,25 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 from app.data_provider.mock_provider import MockDataProvider
-from app.data_provider.odds_api_provider import OddsApiProvider
-from app.picker.selector import (
-    build_ranked_market_only_picks,
-    build_ranked_picks,
-    split_good_and_extra,
-    split_top_good_and_extra,
-)
-
-
-def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="BTTS YES weekend signal bot")
-    parser.add_argument("--weekend", action="store_true", help="Use weekend fixtures only")
-    parser.add_argument(
-        "--provider",
-        choices=["mock", "oddsapi"],
-        default="mock",
-        help="Select data provider (mock or oddsapi)",
-    )
-    return parser
+from app.picker.selector import build_ranked_picks, split_good_and_extra
 
 
 def _is_weekend(date_text: str) -> bool:
@@ -33,12 +15,7 @@ def _is_weekend(date_text: str) -> bool:
 
 
 def _render_md_table(picks: list[dict], section_title: str) -> str:
-    lines = [
-        f"## {section_title}",
-        "",
-        "| # | Match | League | Date | Odds | Model | Implied | Value |",
-        "|---:|---|---|---|---:|---:|---:|---:|",
-    ]
+    lines = [f"## {section_title}", "", "| # | Match | League | Date | Odds | Model | Implied | Value |", "|---:|---|---|---|---:|---:|---:|---:|"]
     for idx, p in enumerate(picks, start=1):
         lines.append(
             f"| {idx} | {p['home_team']} vs {p['away_team']} | {p['league']} | {p['date']} | {p['odds']:.2f} | {p['model_prob']:.4f} | {p['implied_prob']:.4f} | {p['value']:.4f} |"
@@ -50,33 +27,21 @@ def _render_md_table(picks: list[dict], section_title: str) -> str:
 
 
 def main() -> None:
-    parser = build_parser()
+    parser = argparse.ArgumentParser(description="BTTS YES weekend signal bot")
+    parser.add_argument("--weekend", action="store_true", help="Use weekend fixtures only")
     args = parser.parse_args()
 
-    if args.provider == "oddsapi":
-        provider = OddsApiProvider()
-    else:
-        provider = MockDataProvider(data_dir="data")
-
+    provider = MockDataProvider(data_dir="data")
     fixtures = provider.get_fixtures()
     if args.weekend:
         fixtures = [f for f in fixtures if _is_weekend(f["date"])]
 
-    odds = provider.get_odds()
-
-    if args.provider == "oddsapi":
-        ranked_picks = build_ranked_market_only_picks(
-            fixtures=fixtures,
-            odds_by_match_id=odds,
-        )
-        good_picks, extra_picks = split_top_good_and_extra(ranked_picks)
-    else:
-        ranked_picks = build_ranked_picks(
-            fixtures=fixtures,
-            odds_by_match_id=odds,
-            team_histories=provider.get_team_histories(),
-        )
-        good_picks, extra_picks = split_good_and_extra(ranked_picks)
+    ranked_picks = build_ranked_picks(
+        fixtures=fixtures,
+        odds_by_match_id=provider.get_odds(),
+        team_histories=provider.get_team_histories(),
+    )
+    good_picks, extra_picks = split_good_and_extra(ranked_picks)
 
     good_dicts = [p.to_dict() for p in good_picks]
     extra_dicts = [p.to_dict() for p in extra_picks]
@@ -84,7 +49,6 @@ def main() -> None:
     output = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "scope": "weekend" if args.weekend else "all",
-        "provider": args.provider,
         "good_picks": good_dicts,
         "extra_picks": extra_dicts,
     }
@@ -96,7 +60,6 @@ def main() -> None:
         "",
         f"Generated at: {output['generated_at']}",
         f"Scope: {output['scope']}",
-        f"Provider: {output['provider']}",
         "",
         _render_md_table(good_dicts, "Top 5 Good Picks"),
         _render_md_table(extra_dicts, "Next 10 Extra Picks"),
