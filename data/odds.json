@@ -1,0 +1,20 @@
+[
+  {"match_id": "M001", "btts_yes_odds": 1.82},
+  {"match_id": "M002", "btts_yes_odds": 1.95},
+  {"match_id": "M003", "btts_yes_odds": 1.67},
+  {"match_id": "M004", "btts_yes_odds": 2.08},
+  {"match_id": "M005", "btts_yes_odds": 1.74},
+  {"match_id": "M006", "btts_yes_odds": 1.61},
+  {"match_id": "M007", "btts_yes_odds": 2.22},
+  {"match_id": "M008", "btts_yes_odds": 1.88},
+  {"match_id": "M009", "btts_yes_odds": 1.79},
+  {"match_id": "M010", "btts_yes_odds": 2.35},
+  {"match_id": "M011", "btts_yes_odds": 1.58},
+  {"match_id": "M012", "btts_yes_odds": 1.92},
+  {"match_id": "M013", "btts_yes_odds": 2.12},
+  {"match_id": "M014", "btts_yes_odds": 1.71},
+  {"match_id": "M015", "btts_yes_odds": 1.99},
+  {"match_id": "M016", "btts_yes_odds": 1.83},
+  {"match_id": "M017", "btts_yes_odds": 2.18},
+  {"match_id": "M018", "btts_yes_odds": 1.76}
+]
