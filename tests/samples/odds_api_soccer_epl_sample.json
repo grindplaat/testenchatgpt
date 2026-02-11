@@ -1,0 +1,46 @@
+[
+  {
+    "id": "event_1",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-14T15:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "bet365",
+        "markets": [
+          {
+            "key": "btts",
+            "outcomes": [
+              {"name": "Yes", "price": 1.8},
+              {"name": "No", "price": 1.95}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "event_2",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-15T16:30:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "unibet",
+        "markets": [
+          {
+            "key": "btts",
+            "outcomes": [
+              {"name": "No", "price": 2.0},
+              {"name": "Yes", "price": 1.65}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
