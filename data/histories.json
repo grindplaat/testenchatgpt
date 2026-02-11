@@ -1,0 +1,146 @@
+{
+  "North City": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Harbor United": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": false, "conceded": true},
+    {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Madrid Coast": [
+    {"scored": true, "conceded": false}, {"scored": true, "conceded":true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Sevilla Stars": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Milan Borough": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}
+  ],
+  "Turin Eagles": [
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Rhine FC": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true},
+    {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Berlin Forge": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Paris Metro": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": false, "conceded": true}
+  ],
+  "Lyon River": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}
+  ],
+  "Ajax Town": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Rotterdam Blue": [
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Lisbon Green": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": false, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Porto Docks": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Leeds Park": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}
+  ],
+  "Bristol Vale": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Istanbul Fire": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Ankara Gold": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Bruges Lake": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Genk Steel": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true},
+    {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Zurich Alps": [
+    {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": false}
+  ],
+  "Basel Central": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Glasgow Red": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Aberdeen North": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": false}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Austin Rovers": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true},
+    {"scored": false, "conceded":true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Miami Orbit": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Rio Coast": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Sao River": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Boca Plains": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Cordoba FC": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": false, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ],
+  "Copenhagen Light": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}
+  ],
+  "Aarhus Wind": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": false, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Oslo Snow": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Bergen Storm": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": false},
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Stockholm East": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true},
+    {"scored": true, "conceded": true}, {"scored": false, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}
+  ],
+  "Malmo Harbor": [
+    {"scored": true, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true},
+    {"scored": false, "conceded": true}, {"scored": true, "conceded": false}, {"scored": true, "conceded": true}, {"scored": true, "conceded": true}
+  ]
+}
