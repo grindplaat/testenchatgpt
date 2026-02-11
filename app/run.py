@@ -29,18 +29,32 @@ def _render_md_table(picks: list[dict], section_title: str) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description="BTTS YES weekend signal bot")
     parser.add_argument("--weekend", action="store_true", help="Use weekend fixtures only")
+    parser.add_argument(
+        "--provider",
+        choices=["mock", "oddsapi"],
+        default="mock",
+        help="Select data provider (mock or oddsapi)",
+    )
+
     args = parser.parse_args()
 
-    provider = MockDataProvider(data_dir="data")
+    if args.provider == "mock":
+        provider = MockDataProvider(data_dir="data")
+    else:
+        from app.data_provider.odds_api_provider import OddsApiProvider
+        provider = OddsApiProvider()
+
     fixtures = provider.get_fixtures()
+
     if args.weekend:
         fixtures = [f for f in fixtures if _is_weekend(f["date"])]
 
     ranked_picks = build_ranked_picks(
         fixtures=fixtures,
         odds_by_match_id=provider.get_odds(),
-        team_histories=provider.get_team_histories(),
+        team_histories=provider.get_team_histories() if args.provider == "mock" else {},
     )
+
     good_picks, extra_picks = split_good_and_extra(ranked_picks)
 
     good_dicts = [p.to_dict() for p in good_picks]
@@ -64,6 +78,7 @@ def main() -> None:
         _render_md_table(good_dicts, "Top 5 Good Picks"),
         _render_md_table(extra_dicts, "Next 10 Extra Picks"),
     ]
+
     Path("report.md").write_text("\n".join(report), encoding="utf-8")
 
     print("Generated report.md and picks.json")

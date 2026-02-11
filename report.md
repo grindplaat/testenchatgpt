@@ -1,6 +1,6 @@
 # BTTS YES Weekend Signal Bot Report
 
-Generated at: 2026-02-11T15:15:02.985071Z
+Generated at: 2026-02-11T18:26:21.286813Z
 Scope: weekend
 
 ## Top 5 Good Picks
